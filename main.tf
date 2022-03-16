@@ -41,3 +41,7 @@ resource "aws_s3_bucket" "b" {
     tags = {
         ManagedBy = "terraform"
     }
+
+output "website" {
+  value = "http://${aws_s3_bucket.b.website_endpoint}"
+}
