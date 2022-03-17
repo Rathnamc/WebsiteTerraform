@@ -1,0 +1,13 @@
+<svg id="Group_55" data-name="Group 55" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="155.573" height="155.573" viewBox="0 0 155.573 155.573">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_40" data-name="Rectangle 40" width="155.573" height="155.573" fill="#2823b4"/>
+    </clipPath>
+  </defs>
+  <g id="Group_41" data-name="Group 41" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Path_48" data-name="Path 48" d="M30.047,65.1V42.168A12.135,12.135,0,0,1,42.168,30.047H65.1V0H42.168A42.216,42.216,0,0,0,0,42.168V65.1Z" transform="translate(0.339 1.807)" fill="#2823b4" opacity="0.5"/>
+    <path id="Path_49" data-name="Path 49" d="M87,30.047h22.934a12.135,12.135,0,0,1,12.121,12.121V65.1H152.1V42.168A42.216,42.216,0,0,0,109.934,0H87Z" transform="translate(0.476 1.807)" fill="#2823b4"/>
+    <path id="Path_50" data-name="Path 50" d="M65.1,122.055H42.168a12.135,12.135,0,0,1-12.121-12.121V87H0v22.934A42.216,42.216,0,0,0,42.168,152.1H65.1Z" transform="translate(0.339 1.944)" fill="#2823b4"/>
+    <path id="Path_51" data-name="Path 51" d="M122.055,87v22.934a12.135,12.135,0,0,1-12.121,12.121H87V152.1h22.934A42.216,42.216,0,0,0,152.1,109.934V87Z" transform="translate(0.476 1.944)" fill="#2823b4"/>
+  </g>
+</svg>
