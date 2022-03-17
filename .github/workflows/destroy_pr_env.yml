@@ -20,7 +20,7 @@ jobs:
         with:
           tf_actions_version: 0.12.13
           tf_actions_subcommand: 'init'
-          args: '-backend-config="key=${{ env.BRANCH_NAME }}.cdfexchange.com.tfstate"'
+          args: '-backend-config="key=${{ env.BRANCH_NAME }}.cdf-exchange.com.tfstate"'
       - name: 'Terraform Destroy'
         uses: hashicorp/terraform-github-actions@master
         with:
