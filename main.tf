@@ -13,6 +13,9 @@ variable "env_prefix" {}
 variable "is_temp_env" {
   default = false
 }
+variable "bucket" {
+  default = "rathnam-acd-bucket"
+}
 
 resource "aws_s3_bucket" "b" {
   bucket = "${var.env_prefix}${var.domain}"
