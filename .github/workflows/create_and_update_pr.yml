@@ -19,14 +19,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Install Dependencies
-        run: yarn
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Install Dependencies
-        run: yarn
-      - name: Build Site
-        run: yarn build
       - name: 'Terraform Init'
         uses: hashicorp/terraform-github-actions@master
         with:
@@ -45,7 +37,6 @@ jobs:
           tf_actions_version: 0.12.13
           tf_actions_subcommand: 'apply'
           args: 'tf.plan'
-
       - name: Terraform Output
         id: terraform
         uses: hashicorp/terraform-github-actions@master
