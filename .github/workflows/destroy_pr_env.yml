@@ -28,7 +28,7 @@ jobs:
           tf_actions_subcommand: 'destroy'
           args: '-var="is_temp_env=true" -var="env_prefix=${{ env.BRANCH_NAME }}."'
       - name: Tell PR that we have destroyed the thing
-        uses: thollander/actions-comment-pull-request@master
+        uses: thollander/actions-comment-pull-request@main
         with:
           message: 'Temporary environment now destroyed'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
