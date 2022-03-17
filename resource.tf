@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "${var.env_prefix}cdf-exchange.com"
+  bucket = "${var.env_prefix}-acd-cdf-exchange.com"
   acl    = "public-read"
   force_destroy = var.is_temp_env
 
@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "b" {
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::${var.env_prefix}cdf-exchange.com/*"
+      "Resource": "arn:aws:s3:::${var.env_prefix}-acd-cdf-exchange.com/*"
     }
   ]
 }
