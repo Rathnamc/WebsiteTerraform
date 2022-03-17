@@ -9,13 +9,15 @@ terraform {
   }
 }
 
-variable "env_prefix" { }
+variable "env_prefix" { 
+  default = terraform
+}
 variable "is_temp_env" {
   default = false
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "rathnam-acd-bucket"
+  bucket = var.env_prefix"-rathnam-acd-bucket"
   acl    = "public-read"
   force_destroy = var.is_temp_env
 
