@@ -1,1 +1,0 @@
-domain      = "rathnam-acd-bucket"
