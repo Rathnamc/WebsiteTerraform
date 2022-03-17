@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "cdf-exchange.com" {
   bucket = "${var.env_prefix}cdf-exchange.com"
   acl    = "public-read"
   force_destroy = var.is_temp_env
