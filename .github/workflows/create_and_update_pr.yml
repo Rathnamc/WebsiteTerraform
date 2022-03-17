@@ -7,7 +7,7 @@ on:
     inputs:
       reason:
         description: 'Why are you triggering this workflow?'
-        required: false
+        required: true
 
 jobs:
   create_or_update_pr_env:
