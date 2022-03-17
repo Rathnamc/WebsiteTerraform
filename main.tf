@@ -18,7 +18,7 @@ variable "bucket" {
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "${var.env_prefix}-${var.bucket}"
+  bucket = "${var.env_prefix}${var.bucket}"
   acl    = "public-read"
   force_destroy = var.is_temp_env
 
@@ -38,7 +38,7 @@ resource "aws_s3_bucket" "b" {
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::rathnam-acd-bucket/*"
+      "Resource": "arn:aws:s3:::${var.bucket}rathnam-acd-bucket/*"
     }
   ]
 }
