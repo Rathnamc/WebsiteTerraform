@@ -1,3 +1,19 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
+terraform {
+  backend "s3" {
+    bucket = "cdf-exchange.com-tf-state"
+    region = "us-east-1"
+  }
+}
+
+variable "env_prefix" { }
+variable "is_temp_env" {
+  default = false
+}
+
 resource "aws_s3_bucket" "b" {
   bucket = "${var.env_prefix}cdf-exchange.com"
   acl    = "public-read"
@@ -25,4 +41,8 @@ resource "aws_s3_bucket" "b" {
   tags = {
     ManagedBy = "terraform"
   }
+}
+
+output "website" {
+  value = "http://${aws_s3_bucket.b.website_endpoint}"
 }
