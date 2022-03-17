@@ -15,7 +15,7 @@ variable "is_temp_env" {
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "${var.env_prefix}-rathnam-acd-bucket"
+  bucket = "${var.env_prefix}-${var.domain}"
   acl    = "public-read"
   force_destroy = var.is_temp_env
 
