@@ -1,8 +1,14 @@
+name: Create PR Env
+
 on:
   pull_request:
     types: [reopened, opened, synchronize, edited]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Why are you triggering this workflow?'
+        required: true
 
-name: Create PR Env
 jobs:
   create_or_update_pr_env:
     runs-on: ubuntu-latest
