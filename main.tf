@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "cdf-exchange.com-tf-state"
-    region = "eu-west-2"
+    region = "us-east-1"
   }
 }
 
