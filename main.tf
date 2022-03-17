@@ -35,7 +35,7 @@ resource "aws_s3_bucket" "b" {
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::${var.env_prefix}rathnam-acd-bucket/*"
+      "Resource": "arn:aws:s3:::rathnam-acd-bucket/*"
     }
   ]
 }
