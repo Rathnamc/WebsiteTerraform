@@ -28,7 +28,7 @@ resource "aws_s3_bucket" "b" {
   tags = {
     ManagedBy = "terraform"
   }
-
+#test
   policy = <<POLICY
 {
   "Version": "2012-10-17",
