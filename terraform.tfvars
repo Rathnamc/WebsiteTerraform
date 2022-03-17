@@ -1,2 +1,2 @@
-hosted_zone = "example.com"
-domain      = "my"
+
+domain      = "rathnam-acd-bucket"
