@@ -50,6 +50,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
           AWS_DEFAULT_REGION: 'us-east-1'
         run: aws s3 sync . s3://${{ env.BRANCH_NAME }}.rathnam-acd-bucket
-
-        #Test Comment
          
