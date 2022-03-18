@@ -20,12 +20,14 @@ jobs:
         with:
           tf_actions_version: 0.12.13
           tf_actions_subcommand: 'init'
+          tf_actions_working_dir: 'terraform'
           args: '-backend-config="key=${{ env.BRANCH_NAME }}.cdf-exchange.com.tfstate"'
       - name: 'Terraform Destroy'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 0.12.13
           tf_actions_subcommand: 'destroy'
+          tf_actions_working_dir: 'terraform'
           args: '-var="is_temp_env=true" -var="env_prefix=${{ env.BRANCH_NAME }}"'
       - name: Tell PR that we have destroyed the thing
         uses: thollander/actions-comment-pull-request@main
